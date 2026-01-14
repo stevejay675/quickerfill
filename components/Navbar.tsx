@@ -49,29 +49,29 @@ export default function Navigation() {
           </div>
 
           {/* Mobile menu button */}
-          <button 
-            className="md:hidden p-2 relative z-50"
-            onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle menu"
-          >
-            <div className="w-6 h-5 flex flex-col justify-between">
-              <span 
-                className={`w-full h-0.5 bg-gray-600 transition-all duration-300 ease-in-out ${
-                  isOpen ? 'rotate-45 translate-y-2' : ''
-                }`}
-              ></span>
-              <span 
-                className={`w-full h-0.5 bg-gray-600 transition-all duration-300 ease-in-out ${
-                  isOpen ? 'opacity-0' : ''
-                }`}
-              ></span>
-              <span 
-                className={`w-full h-0.5 bg-gray-600 transition-all duration-300 ease-in-out ${
-                  isOpen ? '-rotate-45 -translate-y-2' : ''
-                }`}
-              ></span>
-            </div>
-          </button>
+<button 
+  className="md:hidden p-2 relative z-50"
+  onClick={() => setIsOpen(!isOpen)}
+  aria-label="Toggle menu"
+>
+  <div className="w-6 h-5 flex flex-col justify-between">
+    <span 
+      className={`w-full h-0.5 bg-gray-600 transition-all duration-300 ease-in-out origin-center ${
+        isOpen ? 'rotate-45 translate-y-[9px]' : ''
+      }`}
+    ></span>
+    <span 
+      className={`w-full h-0.5 bg-gray-600 transition-all duration-300 ease-in-out ${
+        isOpen ? 'opacity-0' : ''
+      }`}
+    ></span>
+    <span 
+      className={`w-full h-0.5 bg-gray-600 transition-all duration-300 ease-in-out origin-center ${
+        isOpen ? '-rotate-45 -translate-y-[9px]' : ''
+      }`}
+    ></span>
+  </div>
+</button>
         </div>
       </div>
 

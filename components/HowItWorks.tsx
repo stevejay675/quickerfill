@@ -1,6 +1,6 @@
 export default function HowItWorks() {
   return (
-    <section className=" bg-white  ">
+    <section className=" bg-white  " id="how-it-works">
         <div className="max-w-7xl mx-auto px-6 py-16 md:py-24 overflow-hidden">
         {/* Header */}
         <div className="mb-16 max-w-2xl">
